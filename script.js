@@ -37,14 +37,25 @@ function adjustOpacityAndScaleOnScroll() {
   adjustOpacityAndScaleOnScroll();
   
   function calcularSangue() {
-    // Obtenha os valores de peso e altura a partir dos campos de entrada
+    // Obtenha os valores de peso e hematocrito a partir dos campos de entrada
     var peso = parseFloat(document.getElementById("peso").value);
     var ht = parseFloat(document.getElementById("hematocrito").value);
+    var escolha = document.getElementById("escolha").value; // Obtenha a escolha
 
-    // Faça o cálculo
-    var sangue = (((25 - ht) * 2.2) * peso);
+    // Faça o cálculo com base na escolha
+    var resultado;
+    if (escolha === "cao") {
+        resultado = (((25 - ht) * 2.2) * peso);
+    } else if (escolha === "gato") {
+        resultado = (((25 - ht) * 0.9) * peso);
+    }
 
     // Exiba o resultado na div de resultado
     var resultadoDiv = document.getElementById("resultado");
-    resultadoDiv.textContent = "Resultado: " + sangue.toFixed(0);
+    resultadoDiv.textContent = "Sangue Total: " + resultado.toFixed(0);
+
+    // Divida o resultado por 2 e exiba na div "emacias"
+    var emaciasDiv = document.getElementById("emacias");
+    var emacias = resultado / 2;
+    emaciasDiv.textContent = "Concentrado de Hemácias: " + emacias.toFixed(0);
 }

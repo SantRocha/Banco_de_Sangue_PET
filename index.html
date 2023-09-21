@@ -24,10 +24,10 @@
                         <a href="sobre.html" target="_parent"><li>Sobre o HemoPet</li></a>
                         <a href="servicos.html" target="_parent"><li>Serviços</li></liSevi></a>
                         <a href="doadores.html" target="_parent"><li>Doadores</li></a>
-                        <a href="#" target="_parent"><li>Parceiros</li></a>
+                        <a href="sobre.html#parceiros" target="_parent"><li>Parceiros</li></a>
                         <a href="#hemocalculadora" target="_parent"><li>Hemo Calculadora</li></a>
                         <a href="sobre.html#doacao" target="_parent"><li>Doação de Sangue Pet</li></a>
-                        <a href="servicos.html#carteirinha" target="_parent"><li>Carteirinha de Doador</li></a>
+                        <a href="carteirinha.html" target="_parent"><li>Carteirinha de Doador</li></a>
                         <a href="sobre.html#ajuda" target="_parent"><li>Quer nos Ajudar a Salvar Vidas</li></a>
                     </ul>   
                 </div>
@@ -38,6 +38,7 @@
                 <p>Sobre</p>
                 <ul>
                     <a href="sobre.html" target="_parent"><li>Sobre o HemoPet</li></a>
+                    <a href="sobre.html#parceiros" target="_parent"><li>Parceiros</li></a>
                     <a href="sobre.html#doacao" target="_parent"><li>Doação de Sangue Pet</li></a>
                     <a href="sobre.html#ajuda" target="_parent"><li>Quer nos Ajudar a Salvar Vidas</li></a>
                 </ul>
@@ -47,9 +48,8 @@
                 <ul>
                     <a href="servicos.html" target="_parent"><li>Serviços</li></liSevi></a>
                     <a href="doadores.html" target="_parent"><li>Doadores</li></a>
-                    <a href="#" target="_parent"><li>Parceiros</li></a>
                     <a href="#hemocalculadora" target="_parent"><li>Hemo Calculadora</li></a>
-                    <a href="servicos.html#carteirinha" target="_parent"><li>Carteirinha de Doador</li></a>
+                    <a href="carteirinha.html" target="_parent"><li>Carteirinha de Doador</li></a>
                 </ul>
            </div>
         </div>    
@@ -112,11 +112,17 @@
         </section>
         <section id="calculadora">
             <div id="hemocalculadora">
-                <input type="number" id="peso" class="input" name="texto" placeholder="Peso">
-                <input type="number" id="hematocrito" class="input" name="texto" placeholder="Hematócrito Atual">
-                <div id="resultado"></div>
-                <input type="text" id="hemacias" class="input" name="texto" placeholder="Concentrado de Hemácias:">
-                <input type="text" id="sangue" class="input" name="texto" placeholder="Sangue Total:">
+                <div style="font-size: 1.4em; padding-bottom: 12px;">
+                    <label for="escolha">Escolha uma opção &#8594;</label>
+                    <select id="escolha" style="font-size: 1em;">
+                        <option value="cao">Cão</option>
+                        <option value="gato">Gato</option>
+                    </select>
+                </div>
+                <input type="text" id="peso" class="input" name="texto" placeholder="Peso">
+                <input type="text" id="hematocrito" class="input" name="texto" placeholder="Hematócrito Atual">
+                <div id="emacias" class="calc">Concentrado de Hemácias:</div>
+                <div id="resultado" class="calc">Sangue Total:</div>
             </div>
             <button onclick="calcularSangue()">Calcular</button>
         </section>
@@ -124,9 +130,29 @@
     </main>
 
     <footer>
+        <div id="rodape">
+            <a href="https://www.google.com.br/maps/@-9.9546935,-67.8654015,17z?entry=ttu" target="_blank">
+                <div class="contatos"><img src="./imagens/endereco.png" alt="Endereço">
+                    <p>Estr. Dias Martins, 2374-2544 - Campus UFAC, Rio Branco - Acre</p>
+                </div>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=68984160611&text=Ol%C3%A1%2C%20Hemo-Pet!%20Estou%20entrando%20em%20contato%20atrav%C3%A9s%20do%20site" target="_blank">
+                <div class="contatos">
+                    <img src="./imagens/telefone.png" alt="Telefone">
+                    <p>(68) 98416-0611</p>
+                </div>   
+            </a>
+            <a href="https://mail.google.com/" target="_blank">
+                <div class="contatos">
+                    <img src="./imagens/gmail.png" alt="Gmail">
+                    <p>hemo_pet@gmail.com</p>
+                </div>    
+            </a>
+        </div>
         <div id="desenvolvedor">
             <h3>Desenvolvido por <a href="https://www.linkedin.com/in/santiago-rocha-53127226a/" target="_blank">Santiago Rocha</a></h3>
-        </div>    
+        </div>
     </footer>
+ 
 </body>
 </html>

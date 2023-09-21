@@ -186,13 +186,21 @@ strong {
     color: #8d4040;
 }
 
-.input {
-    font-size: 1.4em;
+#calculadora {
+    display: grid;
+    place-items: center;
 }
 
 #hemocalculadora {
     padding: 50px;
     box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.164);
+    width: 100%;
+}
+
+.input {
+    font-size: 1.4em;
+    width: 48%;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.205);
 }
 
 button {
@@ -207,18 +215,14 @@ button {
     border-radius: 10px;
 }
 
-#calculadora {
-    display: grid;
-    place-items: center;
-}
-
-#resultado {
-    width: 200px;
-    height: 60px;
-    color: black;
-    background-color: white;
-    border: 5px;
-    border-color: black;
+.calc {
+    margin-top: 20px;
+    padding: 1px;
+    font-size: 1.5em;
+    color: #757575;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.205);
+    width: 97.65%;
+    border: 2px solid black;
 }
 
 footer {
@@ -226,7 +230,39 @@ footer {
     min-height: 150px;
     width: 100%;
     background-color: #8C3C40;
+    display: grid;
+    color: white;
+    place-items: bottom;
+}
+
+#rodape {
     display: flex;
+    font-size: 1.3em;
+    padding-top: 15px;
+}
+
+#rodape a {
+    text-decoration: none;
+    color: white;
+}
+
+#rodape a:hover {
+    color: black;
+}
+
+.contatos {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: auto;
+    margin: 10px 40px 10px 40px;
+    padding-top: 10px;
+}
+
+.contatos img {
+    margin-right: 10px;
+    max-width: 25px;
+    height: auto;
 }
 
 #desenvolvedor {
@@ -234,6 +270,7 @@ footer {
     margin-top: auto;
     color: white;
     text-align: center;
+    background-color: #8C3C40;
 }
 
 h3 {
@@ -370,5 +407,33 @@ h3 {
 
     .texto p {
         margin: auto;
+    }
+
+    #calculadora {
+        width: 90%;
+        padding-top: 50px;
+
+    }
+
+    #hemocalculadora {
+        padding: 50px 0px 20px 0px;
+        display: grid;
+        place-items: center;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .input {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    
+    .calc {
+        width: 89.1%;
+    }
+
+    #rodape {
+        display: block;
     }
 }
