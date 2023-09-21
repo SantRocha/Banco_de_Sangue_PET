@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DEAB-Pet</title>
+    <title>HEMOPET</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
     <script src="script.js" defer></script>
@@ -13,25 +13,46 @@
         <div id="logo">
             <img src="./imagens/logo-v.png" alt="logo">
         </div>
-        <h1>DEAB-Pet</h1>
+        <h1>HEMOPET</h1>
     </header>
     <nav>
-        <div class="menu">
-            <p><hr><br><hr><br><hr></p>
-            <div class="list-menu">
-                <ul>
-                    <li><a href="">Seviços</a></li>
-                    <li><a href="">Doadores</a></li>
-                    <li><a href="">Contatos</a></li>
-                    <li><a href="">Parceiros</a></li>
-                    <li><a href="">Sobre a HemoPet</a></li>
-                    <li><a href="">Hemo Calculadora</a></li>
-                    <li><a href="">Doação de Sangue Pet</a></li>
-                    <li><a href="">Carteirinha de Doador</a></li>
-                    <li><a href="">Quer nos Ajudar a Salvar Vidas</a></li>
-                </ul>   
-            </div>
+        <div id="mobile">
+            <div class="menu">
+                <p><hr><br><hr><br><hr></p>
+                <div class="list-menu">
+                    <ul>
+                        <a href="sobre.html" target="_parent"><li>Sobre o HemoPet</li></a>
+                        <a href="servicos.html" target="_parent"><li>Serviços</li></liSevi></a>
+                        <a href="doadores.html" target="_parent"><li>Doadores</li></a>
+                        <a href="#" target="_parent"><li>Parceiros</li></a>
+                        <a href="#hemocalculadora" target="_parent"><li>Hemo Calculadora</li></a>
+                        <a href="sobre.html#doacao" target="_parent"><li>Doação de Sangue Pet</li></a>
+                        <a href="servicos.html#carteirinha" target="_parent"><li>Carteirinha de Doador</li></a>
+                        <a href="sobre.html#ajuda" target="_parent"><li>Quer nos Ajudar a Salvar Vidas</li></a>
+                    </ul>   
+                </div>
+            </div> 
         </div>
+        <div id="desktop">
+           <div id="sobre" class="lista">
+                <p>Sobre</p>
+                <ul>
+                    <a href="sobre.html" target="_parent"><li>Sobre o HemoPet</li></a>
+                    <a href="sobre.html#doacao" target="_parent"><li>Doação de Sangue Pet</li></a>
+                    <a href="sobre.html#ajuda" target="_parent"><li>Quer nos Ajudar a Salvar Vidas</li></a>
+                </ul>
+           </div>
+           <div id="banco" class="lista">
+                <p>Banco de Sangue</p>
+                <ul>
+                    <a href="servicos.html" target="_parent"><li>Serviços</li></liSevi></a>
+                    <a href="doadores.html" target="_parent"><li>Doadores</li></a>
+                    <a href="#" target="_parent"><li>Parceiros</li></a>
+                    <a href="#hemocalculadora" target="_parent"><li>Hemo Calculadora</li></a>
+                    <a href="servicos.html#carteirinha" target="_parent"><li>Carteirinha de Doador</li></a>
+                </ul>
+           </div>
+        </div>    
     </nav>
     
     <main>
@@ -89,15 +110,23 @@
                 </div>
             </section>
         </section>
+        <section id="calculadora">
+            <div id="hemocalculadora">
+                <input type="number" id="peso" class="input" name="texto" placeholder="Peso">
+                <input type="number" id="hematocrito" class="input" name="texto" placeholder="Hematócrito Atual">
+                <div id="resultado"></div>
+                <input type="text" id="hemacias" class="input" name="texto" placeholder="Concentrado de Hemácias:">
+                <input type="text" id="sangue" class="input" name="texto" placeholder="Sangue Total:">
+            </div>
+            <button onclick="calcularSangue()">Calcular</button>
+        </section>
         
     </main>
 
     <footer>
         <div id="desenvolvedor">
-            <h3>Desenvolvido por <a href="../Portifolio/index.html" target="_blank">Santiago Rocha</a></h3>
+            <h3>Desenvolvido por <a href="https://www.linkedin.com/in/santiago-rocha-53127226a/" target="_blank">Santiago Rocha</a></h3>
         </div>    
     </footer>
-
-    
 </body>
 </html>

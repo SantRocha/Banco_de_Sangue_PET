@@ -1,5 +1,6 @@
 * {
     margin: 0%;
+    /*meucodigo de acesso mei e 332571997337*/
 }
 
 header {
@@ -39,32 +40,46 @@ nav {
     padding-bottom: 8px;
 }
 
-.menu {
-    padding-top: 8px;
-    font-size: 1.5em;
-    font-family: Open Sans,Helvetica Neue,sans-serif;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 10px;
-    position: relative;
-    margin: auto;
-    line-height: 0.2em;
-    width: 100%;
-    min-width: 320px;
-    max-width: 500px;
-}
+/*******************INICIO MENU DESKTOP*******************/
 
-.menu hr{
-    width: 70px;
-    margin: auto;
-}
-
-ul {
+nav hr {
     display: none;
-    list-style: none;
-    padding: 25px;
-    line-height: 1.7;
 }
+
+#mobile {
+    display: none;
+}
+
+#desktop {
+    display: flex;
+    position: relative;
+    padding: 5px 0px 0px 45px;
+}
+
+.lista {
+font-size: 1.7em;
+font-weight: bold;
+width: 320px;
+text-align: center;
+color: #eebebe;
+}
+
+.lista:hover {
+    background-color: rgba(255, 255, 255, 0.212);
+}
+
+.lista:hover ul {
+    display: block;
+}
+
+.lista ul{
+        display: none;
+        list-style: none;
+        padding: 25px;
+        line-height: 1.7;
+        background-color: rgba(247, 202, 202, 0.938);
+}
+
 
 li:hover {
     background-color: rgba(235, 181, 181, 0.87);
@@ -79,20 +94,8 @@ a:hover {
     color: #ac5f5f;
 }
 
-.list-menu {
-    width: 100%;
-    min-width: 320px;
-    max-width: 500px;
-    background-color: rgba(247, 202, 202, 0.938);
-}
+/********************FIM MENU DESKTOP********************/
 
-.menu:hover {
-    background-color: rgba(255, 255, 255, 0.233);
-}
-
-.menu:hover ul {
-    display: block;
-}
 
 main {
     width: 100%;
@@ -164,6 +167,7 @@ hr {
     width: 100%;
     max-width: 650px;
     font-size: 1.4em;
+    text-align: justify;
     padding: 30px;
     background-color: #e47979c9;
     color: white;
@@ -180,6 +184,41 @@ hr {
 strong {
     font-size: 1.5em;
     color: #8d4040;
+}
+
+.input {
+    font-size: 1.4em;
+}
+
+#hemocalculadora {
+    padding: 50px;
+    box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.164);
+}
+
+button {
+    width: 300px;
+    height: 50px;
+    background-color: #9b0b0b;
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    position: relative;
+    margin-top: -20px;
+    border-radius: 10px;
+}
+
+#calculadora {
+    display: grid;
+    place-items: center;
+}
+
+#resultado {
+    width: 200px;
+    height: 60px;
+    color: black;
+    background-color: white;
+    border: 5px;
+    border-color: black;
 }
 
 footer {
@@ -225,6 +264,86 @@ h3 {
         width: 100%;
         padding-bottom: 15px;
     }
+
+    #desktop {
+        display: none;
+    }
+
+    /*******************INICIO MENU MOBILE*******************/
+
+    nav {
+        background-color: #6e0000d0;
+        width: 100%;
+        height: 33px;
+        padding-bottom: 8px;
+    }    
+
+    nav hr {
+        display: block;
+    }
+
+    #mobile {
+        display: flex;
+        position: relative;
+    }
+
+    .menu {
+        padding-top: 8px;
+        font-size: 1.5em;
+        font-family: Open Sans,Helvetica Neue,sans-serif;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 10px;
+        position: relative;
+        margin: auto;
+        line-height: 0.2em;
+        width: 100%;
+        min-width: 320px;
+        max-width: 500px;
+    }
+
+    .menu hr{
+        width: 70px;
+        margin: auto;
+    }
+
+    ul {
+        display: none;
+        list-style: none;
+        padding: 25px;
+        line-height: 1.7;
+    }
+
+    li:hover {
+        background-color: rgba(235, 181, 181, 0.87);
+    }
+
+    a {
+        text-decoration: none;
+        color: #6e0000;
+    }
+
+    a:hover {
+        color: #ac5f5f;
+    }
+
+    .list-menu {
+        width: 100%;
+        min-width: 320px;
+        max-width: 500px;
+        background-color: rgba(247, 202, 202, 0.938);
+    }
+
+    .menu:hover {
+        background-color: rgba(255, 255, 255, 0.233);
+    }
+
+    .menu:hover ul {
+        display: block;
+    }
+
+
+    /********************FIM MENU MOBILE********************/
 
     .conteudo {
         display: block;
